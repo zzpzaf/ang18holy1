@@ -1,0 +1,126 @@
+.grid-container {
+  height: 100%; /*  This is to make sure that the height of both html and body takes the 100% of th height of the viewport  */
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 320px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas:								/*  Below, we define 6 rows x 1 column  */
+      "header"
+      "nav"
+      "left"
+      "main"
+      "right"
+      "footer";
+    grid-template-columns: 1fr; /*  For the width of columns  */
+    grid-template-rows: 60px 40px 1fr 1fr 14% 40px; /*  For the height of each one of the 6 rows  */
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas:									/*  Below, we define 5 rows x 2 columns  */
+      "header header"
+      "nav nav"
+      "left main"
+      "right right"
+      "footer footer";
+    grid-template-columns: max(200px, 20%) 1fr; /*  For the width of columns  */
+    grid-template-rows: 80px 50px 1fr 10% 60px; /*  For the height of each one of the 4 rows  */
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas:								/*  Below, we define 4 rows x 3 columns */
+      "header header header"
+      "nav nav nav"
+      "left main right"
+      "footer footer footer";
+    grid-template-columns: max(200px, 25%) 1fr min-content; /*  For the width of columns  */
+    grid-template-rows: 80px 50px 1fr 60px; /*  For the height of each one of the 4 rows  */
+  }
+}
+
+header, nav, aside, main, footer {
+    padding-inline: 6px;
+}
+
+header {
+  grid-area: header;
+  background-color: dodgerblue;
+}
+
+nav {
+  grid-area: nav;
+  background-color: lightskyblue;
+}
+
+aside.left {
+  grid-area: left;
+  background-color: lightpink;
+}
+
+main {
+  grid-area: main;
+  background-color: lightgray;
+}
+
+aside.right {
+  grid-area: right;
+  background-color: lightgoldenrodyellow;
+}
+
+footer {
+  grid-area: footer;
+  background-color: lightseagreen;
+}
+
+@media (min-width: 320px) {
+  grid-container {
+    display: grid;
+    grid-template-areas:								/*  Below, we define 6 rows x 1 column  */
+      "header"
+      "nav"
+      "left"
+      "main"
+      "right"
+      "footer";
+    grid-template-columns: 1fr; /*  For the width of columns  */
+    grid-template-rows: 60px 40px 1fr 1fr 14% 50px; /*  For the height of each one of the 6 rows  */
+    /* min-height: 100%;								  This is to make sure that the grid takes up the full height of the viewport  */
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-areas:									/*  Below, we define 5 rows x 2 columns  */
+      "header header"
+      "nav nav"
+      "left main"
+      "right right"
+      "footer footer";
+    grid-template-columns: max(200px, 20%) 1fr; /*  For the width of columns  */
+    grid-template-rows: 80px 50px 1fr 10% 60px; /*  For the height of each one of the 4 rows  */
+    /* min-height: 100%;									  This is to make sure that the grid takes up the full height of the viewport  */
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-areas:								/*  Below, we define 4 rows x 3 columns */
+      "header header header"
+      "nav nav nav"
+      "left main right"
+      "footer footer footer";
+    grid-template-columns: max(200px, 25%) 1fr 3%; /*  For the width of columns  */
+    grid-template-rows: 80px 50px 1fr 60px; /*  For the height of each one of the 4 rows  */
+    /* min-height: 100%;									  This is to make sure that the grid takes up the full height of the viewport  */
+  }
+}
