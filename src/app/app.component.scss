@@ -1,18 +1,14 @@
-:host {
-  --all-padd: 0px; // Default value to ensure the custom property exists
-  --hh-large: 0px; // Height of the header
-  --nrh-large: 0px; // Height of the nav row
-  --fh-large: 0px; // Height of the footer 
-}
+
 
 .grid-container {
   height: 100%; 
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 }
 
 header, nav, aside, main, footer {
-    padding-inline: var(--all-padd);
+    padding-inline: var(--allPadding);
 }
 
 header {
@@ -45,51 +41,49 @@ footer {
   background-color: lightseagreen;
 }
 
-
-
-
-
 @media (min-width: 320px) {
     .grid-container {
       display: grid;
-      grid-template-areas:								/*  Below, we define 6 rows x 1 column  */
+      grid-template-areas:
         "header"
         "nav"
         "left"
         "main"
         "right"
         "footer";
-      grid-template-columns: 1fr; /*  For the width of columns  */
-      grid-template-rows: 60px 40px 1fr 1fr 14% 40px; /*  For the height of each one of the 6 rows  */
+      grid-template-columns: 1fr;   // setting columns width
+      //grid-template-rows: 60px min-content 1fr 1.7fr min-content min-content;
+      grid-template-rows: var(--hhSmall) var(--nrhSmall) var(--lphSmall) var(--mhSmall) var(--rphSmall) var(--fhSmall);  // setting rows height
     }
   }
   
   @media (min-width: 768px) {
     .grid-container {
       display: grid;
-      grid-template-areas:									/*  Below, we define 5 rows x 2 columns  */
+      grid-template-areas:
         "header header"
         "nav nav"
         "left main"
         "right right"
         "footer footer";
-      grid-template-columns: max(200px, 20%) 1fr; /*  For the width of columns  */
-      grid-template-rows: 80px 50px 1fr 10% 60px; /*  For the height of each one of the 4 rows  */
+      // grid-template-columns: max(200px, 20%) 1fr;
+      grid-template-columns: max(var(--lpw1Medium), var(--lpw2Medium)) 1fr; // setting columns width
+      // grid-template-rows: 70px 40px 1fr 10% 50px;
+      grid-template-rows: var(--hhMedium) var(--nrhMedium) 1fr var(--rphMedium) var(--fhMedium);  // setting rows height
     }
   }
   
   @media (min-width: 1024px) {
     .grid-container {
       display: grid;
-      grid-template-areas:								/*  Below, we define 4 rows x 3 columns */
+      grid-template-areas:
         "header header header"
         "nav nav nav"
         "left main right"
         "footer footer footer";
-      grid-template-columns: max(200px, 25%) 1fr min-content; /*  For the width of columns  */
-      // grid-template-rows: 80px 50px 1fr 60px; /*  For the height of each one of the 4 rows  */
-      grid-template-rows: var(--hh-large) var(--nrh-large) 1fr var(--fh-large); /*  For the height of each one of the 4 rows  */
-
-
+      // grid-template-columns: max(200px, 25%) 1fr min-content; 
+      grid-template-columns: max(var(--lpw1Large), var(--lpw2Large)) 1fr var(--rpwLarge);  // setting columns width
+      // grid-template-rows: 80px 50px 1fr 60px; 
+      grid-template-rows: var(--hhLarge) var(--nrhLarge) 1fr var(--fhLarge); // setting rows height
     }
   }
