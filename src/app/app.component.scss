@@ -1,12 +1,18 @@
+:host {
+  --all-padd: 0px; // Default value to ensure the custom property exists
+  --hh-large: 0px; // Height of the header
+  --nrh-large: 0px; // Height of the nav row
+  --fh-large: 0px; // Height of the footer 
+}
+
 .grid-container {
   height: 100%; 
   margin: 0;
   padding: 0;
 }
 
-
 header, nav, aside, main, footer {
-    padding-inline: 6px;
+    padding-inline: var(--all-padd);
 }
 
 header {
@@ -81,6 +87,9 @@ footer {
         "left main right"
         "footer footer footer";
       grid-template-columns: max(200px, 25%) 1fr min-content; /*  For the width of columns  */
-      grid-template-rows: 80px 50px 1fr 60px; /*  For the height of each one of the 4 rows  */
+      // grid-template-rows: 80px 50px 1fr 60px; /*  For the height of each one of the 4 rows  */
+      grid-template-rows: var(--hh-large) var(--nrh-large) 1fr var(--fh-large); /*  For the height of each one of the 4 rows  */
+
+
     }
   }
