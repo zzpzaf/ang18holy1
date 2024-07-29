@@ -10,4 +10,5 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+    headerTitle = 'Angular18 A Holy-Grail Implementation based on CSS Grid';
 }

@@ -27,7 +27,7 @@ interface LayoutConfig {
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'angular18-pure-repo1';
+  title = 'Angular18-Holy-Grail-repo1(Grid)';
 
   private layoutConfig: LayoutConfig = {
     allPadding: { value: 6, unit: 'px' },
