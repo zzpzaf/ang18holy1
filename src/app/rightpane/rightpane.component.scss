@@ -1,0 +1,53 @@
+.right-pane-container {
+  display: flex;
+  // flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+  // background-color: transparent;
+  background-color: rgb(133, 193, 181);
+  height: 100%;
+
+
+//   overflow-y: auto;
+}
+
+.right-pane-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+::ng-deep .mat-badge-content {
+    background-color:darkslategray  !important;
+    color: white !important;
+}
+
+
+@media (min-width: 320px) {
+  .right-pane-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-inline-start   : 10px;
+    // padding-top: 2px;
+    gap: 10px;
+    // width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .right-pane-container {
+    flex-direction: row;
+    align-items: center;
+
+    // width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .right-pane-container {
+    flex-direction: column;
+    padding: 10px;
+    // width: 100%;
+  }
+}

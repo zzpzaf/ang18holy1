@@ -1,0 +1,36 @@
+.navrow-toolbar-row-container {
+    display: flex;
+    width: 100%;
+    height: 100%; 
+    flex-direction: row;
+    justify-content:space-between;
+    // column-gap: 10px;
+    align-items: center;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    // overflow: auto;
+}
+
+
+
+
+@media (min-width: 320px) {
+    .navrow-toolbar-row-container {
+      font-size: 15px;
+    //   line-height: 20px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .navrow-toolbar-row-container {
+      font-size: 20px;
+    //   line-height: 30px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .navrow-toolbar-row-container {
+      font-size: 25px;
+    //   line-height: 50px;
+    }
+  }

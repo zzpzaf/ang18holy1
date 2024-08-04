@@ -1,4 +1,4 @@
-# Angular18PureRepo1
+# Angular 18 - Start a site project based on a 'holy-grail' layout   
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
 

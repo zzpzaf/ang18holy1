@@ -1,1 +1,14 @@
-<p>leftpane works!</p>
+<!-- <p>leftpane works!</p> -->
+<!-- <div class="sidebar-menu" cdkMenu> -->
+<mat-action-list class="sidebar-menu">
+  @for (item of menuItems; track $index) {
+  <button class="sidebar-menu-item"
+    mat-list-item
+    [ngClass]="{ 'selected-item': selectedItem === $index }"
+    (click)="itemClicked(item, $index)"
+  >
+    {{ item.articleTitle }}
+  </button>
+  }
+</mat-action-list>
+<!-- </div> -->

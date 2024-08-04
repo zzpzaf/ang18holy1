@@ -1,1 +1,26 @@
-<p>rightpane works!</p>
+<!-- <p>rightpane works!</p> -->
+<!-- <mat-card appearance="outlined" class="right-pane-container">
+  <mat-card-content > -->
+    <div class="right-pane-container">
+    <!-- <button mat-fab extended> -->
+    <div class="right-pane-item">
+      <!-- <mat-icon matBadge={{views}} aria-hidden="false">visibility</mat-icon> -->
+      <mat-icon [matBadge]="views >= 1 ? views : ''" aria-hidden="false"
+        >visibility</mat-icon
+      >
+      Views
+    </div>
+    <!-- </button> -->
+    <p></p>
+    <!-- <button mat-fab extended> -->
+    <div class="right-pane-item" (click)="likeClicked()">
+      <!-- <mat-icon matBadge={{likes}} aria-hidden="false">favorite_border</mat-icon> -->
+      <mat-icon [matBadge]="likes >= 1 ? likes : ''" aria-hidden="false"
+        >favorite_border</mat-icon
+      >
+      Likes
+    </div>
+    <!-- </button>     -->
+    </div>
+  <!-- </mat-card-content>
+</mat-card> -->

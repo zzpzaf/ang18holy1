@@ -30,27 +30,30 @@ export class AppComponent {
   title = 'Angular18-Holy-Grail-repo1(Grid)';
 
   private layoutConfig: LayoutConfig = {
-    allPadding: { value: 6, unit: 'px' },
+    allPadding: { value: 2, unit: 'px' },
 
-    hhSmall: { value:65, unit: 'px' },
+    hhSmall: { value:120, unit: 'px' },
     nrhSmall: { value: 'min-content', unit: '' },
-    lphSmall: { value: 1, unit: 'fr' },
+    lphSmall: { value: .2, unit: 'fr' },
     mhSmall: { value: 1.7, unit: 'fr' },
     rphSmall: { value:'min-content', unit: '' },
     fhSmall: { value: 'min-content', unit: '' },
 
-    hhMedium: { value:70, unit: 'px' },
+    hhMedium: { value:120, unit: 'px' },
     nrhMedium: { value: 40, unit: 'px' },
-    rphMedium: { value:'min-content', unit: '' },
-    fhMedium: { value: 50, unit: 'px' },
+    // rphMedium: { value:'min-content', unit: '' },
+    rphMedium: { value: 50, unit: 'px' },
+    fhMedium: { value: 60, unit: 'px' },
     lpw1Medium: { value: 180, unit: 'px' },
     lpw2Medium: { value: 20, unit: '%' },
+    // lpwMedium: { value: 'min-content', unit: '' },
 
-    hhLarge: { value:80, unit: 'px' },
+    hhLarge: { value:120, unit: 'px' },
     nrhLarge: { value: 50, unit: 'px' },
     fhLarge: { value: 60, unit: 'px' },
-    lpw1Large: { value: 200, unit: 'px' },
-    lpw2Large: { value: 25, unit: '%' },
+    // lpw1Large: { value: 200, unit: 'px' },
+    // lpw2Large: { value: 25, unit: '%' },
+    lpwLarge: { value: 'min-content', unit: '' },
     rpwLarge: { value: 'min-content', unit: '' }
   };
 
