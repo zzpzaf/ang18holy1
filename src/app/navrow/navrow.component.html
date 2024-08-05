@@ -1,1 +1,27 @@
-<p>navrow works!</p>
+<!-- <p>navrow works!</p> -->
+<mat-toolbar class="navrow-toolbar-container">
+    <mat-toolbar-row class="navrow-toolbar-row-container">
+      <a mat-button (click)="dashToggle()">
+        {{ navbarName }}
+        <mat-icon>dashboard</mat-icon>
+      </a>
+      <div>
+        <mat-button-toggle-group appearance="legacy" name="fontStyle">
+          @for (item of navMenuItems; track $index) {
+          <!-- <a mat-button (click)="itemClicked(item)">
+            {{ item.categoryTitle }}
+          </a> -->
+          <!-- <button mat-raised-button (click)="itemClicked(item)">
+            {{ item.categoryTitle }}
+          </button>   -->
+          <mat-button-toggle
+            (click)="itemClicked(item)"
+            value="{{ item.categoryTitle }}"
+          >
+            {{ item.categoryTitle }}
+          </mat-button-toggle>
+          }
+        </mat-button-toggle-group>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>

@@ -1,0 +1,162 @@
+[
+    {
+      "articleId": 1,
+      "categoryId": 1,
+      "articleTitle": "Artificial intelligence"
+    },
+    {
+      "articleId": 2,
+      "categoryId": 1,
+      "articleTitle": "Data Science"
+    },
+    {
+      "articleId": 3,
+      "categoryId": 1,
+      "articleTitle": "Machine Learning"
+  
+    },
+    {
+      "articleId": 4,
+      "categoryId": 1,
+      "articleTitle": "EDA"
+    },
+    {
+      "articleId": 5,
+      "categoryId": 1,
+      "articleTitle": "Classification"
+    },
+    {
+      "articleId": 6,
+      "categoryId": 1,
+      "articleTitle": "Clustering"
+    },
+    {
+      "articleId": 7,
+      "categoryId": 1,
+      "articleTitle": "Neural Networks"
+    },
+    {
+      "articleId": 8,
+      "categoryId": 2,
+      "articleTitle": "General"
+    },
+    {
+      "articleId": 9,
+      "categoryId": 2,
+      "articleTitle": "Design"
+    },
+    {
+      "articleId": 10,
+      "categoryId": 2,
+      "articleTitle": "REST"
+    },
+    {
+      "articleId": 11,
+      "categoryId": 2,
+      "articleTitle": "SOAP"
+    },
+    {
+      "articleId": 12,
+      "categoryId": 2,
+      "articleTitle": "GraphQL"
+    },
+    {
+      "articleId": 13,
+      "categoryId": 2,
+      "articleTitle": "OpenAPI-Swagger"
+    },
+    {
+      "articleId": 14,
+      "categoryId": 3,
+      "articleTitle": "General Info"
+    },
+    {
+      "articleId": 15,
+      "categoryId": 3,
+      "articleTitle": "SRP"
+    },
+    {
+      "articleId": 16,
+      "categoryId": 3,
+      "articleTitle": "OCP"
+    },
+    {
+      "articleId": 17,
+      "categoryId": 3,
+      "articleTitle": "LSP"
+    },
+    {
+      "articleId": 18,
+      "categoryId": 3,
+      "articleTitle": "ISP"
+    },
+    {
+      "articleId": 19,
+      "categoryId": 3,
+      "articleTitle": "DI - IoC"
+    },
+    {
+      "articleId": 20,
+      "categoryId": 4,
+      "articleTitle": "Master"
+    },
+    {
+      "articleId": 21,
+      "categoryId": 4,
+      "articleTitle": "PO"
+    },
+    {
+      "articleId": 22,
+      "categoryId": 4,
+      "articleTitle": "Backlog"
+    },
+    {
+      "articleId": 23,
+      "categoryId": 4,
+      "articleTitle": "User Stories"
+    },
+    {
+      "articleId": 24,
+      "categoryId": 4,
+      "articleTitle": "Sprint"
+    },
+    {
+      "articleId": 25,
+      "categoryId": 4,
+      "articleTitle": "Meetings"
+    },
+    {
+      "articleId": 26,
+      "categoryId": 4,
+      "articleTitle": "Artifacts"
+    },
+    {
+      "articleId": 27,
+      "categoryId": 5,
+      "articleTitle": "Introduction"
+    },
+    {
+      "articleId": 28,
+      "categoryId": 5,
+      "articleTitle": "Circuit Braker"
+    },
+    {
+      "articleId": 29,
+      "categoryId": 5,
+      "articleTitle": "CQRS"
+    },
+    {
+      "articleId": 30,
+      "categoryId": 5,
+      "articleTitle": "Event Sourcing"
+    },
+    {
+      "articleId": 31,
+      "categoryId": 5,
+      "articleTitle": "API Gateway"
+    }
+  
+    
+  
+  
+  ]
