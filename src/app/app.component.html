@@ -1,4 +1,4 @@
-<div class="grid-container" [style]="layoutConfigStyle">
+<!-- <div class="grid-container" [style]="layoutConfigStyle">
   <header>
     <app-header></app-header>
   </header>
@@ -23,4 +23,58 @@
   <footer>
     <app-footer></app-footer>
   </footer>
-</div>
+</div> -->
+
+
+
+
+
+  <!-- <mat-grid-list cols="12" rowHeight="100" gutterSize="0px"> -->
+  <!-- <mat-grid-list cols="12" rowHeight="1.1:1" gutterSize="0px"> -->
+  <!-- <mat-grid-list cols="12" rowHeight="9vh" gutterSize="0px"> -->
+  <mat-grid-list cols="12" rowHeight="9vh" gutterSize="0px">
+    
+    <mat-grid-tile colspan="12" rowspan="1" >
+      <!-- Header -->
+      <span class="header-container">
+          <app-header></app-header>
+      </span>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="12" rowspan="1" >
+      <!-- NavBar -->
+      <span class="navrow-container">
+          <app-navrow></app-navrow>
+      </span>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="2" rowspan="8"ß>
+      <!-- Leftpane -->
+      <span class="leftpane-container">
+          <app-leftpane></app-leftpane> 
+      </span>
+    </mat-grid-tile>
+ß
+    <mat-grid-tile colspan="9" rowspan="8" >
+      <!-- Main -->
+       <span class="main-container">
+          <app-main></app-main>
+      </span>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="1" rowspan="8" >
+      <!-- Rightpane -->
+       <span class="rightpane-container">
+          <app-rightpane></app-rightpane>
+      </span>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="12" rowspan="1" >
+      <!-- Footer -->
+       <span class="footer-container">
+          <app-footer></app-footer>
+      </span>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+
