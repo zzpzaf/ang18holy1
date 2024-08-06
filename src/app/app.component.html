@@ -1,26 +1,36 @@
-<div class="grid-container" [style]="layoutConfigStyle">
-  <header>
-    <app-header></app-header>
-  </header>
 
-  <nav>
-    <app-navrow></app-navrow>
-    <router-outlet />
-  </nav>
 
-  <aside class="left">
-    <app-leftpane></app-leftpane>
-  </aside>
+<mat-grid-list cols="12" rowHeight="9.1vh" gutterSize="0px">
+    
+  <mat-grid-tile colspan="12" rowspan="1" style="background-color: dodgerblue">
+    <!-- Header -->
+        <!-- <app-header"></app-header> -->
+  </mat-grid-tile>
 
-  <main>
-    <app-main></app-main>
-  </main>
+  <mat-grid-tile colspan="12" rowspan="1" style="background-color: lightskyblue">
+    <!-- NavBar -->
+        <!-- <app-navrow"></app-navrow> -->
+  </mat-grid-tile>
 
-  <aside class="right">
-    <app-rightpane></app-rightpane>
-  </aside>
+  <mat-grid-tile colspan="2" rowspan="8" style="background-color: lightpink">
+    <!-- Leftpane -->
+        <!-- <app-leftpane></app-leftpane>  -->
+  </mat-grid-tile>
 
-  <footer>
-    <app-footer></app-footer>
-  </footer>
-</div>
+  <mat-grid-tile colspan="9" rowspan="8" style="background-color: lightgray">
+    <!-- Main -->
+        <!-- <app-main></app-main> -->
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan="1" rowspan="8" style="background-color: lightgoldenrodyellow">
+    <!-- Rightpane -->
+        <!-- <app-rightpane></app-rightpane> -->
+
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan="12" rowspan="1"  style="background-color: lightseagreen">
+    <!-- Footer -->
+        <!-- <app-footer></app-footer> -->
+  </mat-grid-tile>
+
+</mat-grid-list>
