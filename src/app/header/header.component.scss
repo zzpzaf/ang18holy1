@@ -1,7 +1,105 @@
-.header-container {
-    padding-top: 1%;
-    display: flex;
-    justify-content:flex-start;
-    column-gap: 20px;
-    align-items: center;
+.logo-image {
+  width: 192px;
+}
+
+
+.header-toolbar-container {
+  display: flex;
+  flex-direction: column;
+  // padding-top: 10px;
+  width: 100%;
+  height: 100%;
+  // overflow: auto;
+  align-items: center;
+}
+
+.header-toolbar-row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  // padding-top: 1px;
+  // flex-shrink: 1;
+  flex-wrap: wrap;
+  // overflow: auto;
+  column-gap: 30px;
+}
+
+.mat-icon {
+  // font-size: 100px;
+//   margin: auto;
+  transform: scale(3.5);
+  color: rgb(133, 193, 181);
+  padding-left: 4px;
+}
+
+// @media (min-width: 320px) {
+@media (width <= 500px) {
+// @media (max-width: 500px) {
+  .logo-image {
+    width: 96px;
+  }
+  .mat-icon {
+    transform: scale(1.5);
+  }
+  .header-app-title {
+    font-size: small;
+    //   line-height: 20px;
+
+  }
+  .header-toolbar-container {
+    padding-top: 1px;
+    padding-bottom: 12px;
+  }
+  .header-toolbar-row-container {
+    row-gap: 0px;
+    column-gap:2px;
+    flex-wrap: nowrap;
+  }
+}
+
+// @media (min-width: 768px) {
+// @media (481px <= width <= 768px) {
+@media (min-width: 501px) and (max-width: 768px) {
+  .logo-image {
+    width: 96px;
+  }
+  .mat-icon {
+    transform: scale(2.5);
+  }
+  .header-app-title {
+    font-size: large;
+    text-wrap: wrap;
+    //   line-height: 30px;
+  }
+  .header-toolbar-container {
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+  }
+  .header-toolbar-row-container {
+    column-gap: 10px;
+    row-gap: 2px;
+    flex-wrap: nowrap;
+  }
+}
+
+//   @media (min-width: 1024px) {
+//   @media (769px <= width) {
+@media (min-width: 769px) {
+  .logo-image {
+    width: 192px;
+  }
+  .mat-icon {
+    transform: scale(3.5);
+  }
+  .header-app-title {
+    font-size: x-large;
+    //   line-height: 50px;
+  }
+  .header-toolbar-container {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    flex-wrap: nowrap;
+  }
 }
